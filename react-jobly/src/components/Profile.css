@@ -1,0 +1,76 @@
+.profile {
+    text-align: center;
+}
+
+.profile h1 {
+    font-size: 2rem;
+    margin-bottom: 2%;
+    color: white;
+}
+
+/* Updated Profile Info to Match Profile Edit Form */
+.profile-info {
+    background-color: gainsboro;
+    border: 20px solid rgba(16, 16, 16, 0.63);
+    box-shadow: inset 0 0 0 2px #ffffff;
+    box-sizing: border-box;
+    width: 80%; /* Matched with profile-edit-form */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3%; /* Increased padding to match form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-info h3 {
+    font-size: 1.2rem;
+    width: 80%; /* Matched width to labels in edit form */
+    max-width: 400px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Consistent Button Styling */
+.profile-info button,
+.profile-edit-form button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    width: 80%; /* Ensuring button width consistency */
+    max-width: 250px;
+    background-color: #1A43BF; /* Matched edit button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Profile Edit Form */
+.profile-edit-form {
+    background-color: gainsboro;
+    border: 20px solid rgba(16, 16, 16, 0.63);
+    box-shadow: inset 0 0 0 2px #ffffff;
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-edit-form label {
+    text-align: left;
+    width: 80%;
+    min-width: 100px;
+}
+
+.profile-edit-form input {
+    padding: 8px;
+    font-size: 1rem;
+    margin-top: 5px;
+    width: 100%;
+}

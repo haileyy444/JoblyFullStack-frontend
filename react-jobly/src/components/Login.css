@@ -1,0 +1,36 @@
+.login {
+    text-align: center;
+}
+
+.login-container {
+    background-color: #101010d1;
+    color: #f0f2f5;
+    border: 20px solid rgba(16, 16, 16, 0.63);
+    box-shadow: inset 0 0 0 2px #ffffff;
+    box-sizing: border-box;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+  
+}
+.login h1 {
+    color: white;
+}
+
+
+.login-container .form-group {
+    margin: 5px;
+}
+
+.login-container .form-group input {
+    margin-left: 2%;
+    width: 50%;
+}
+
+.login-container button {
+    margin: 1%;
+    margin-bottom: 2%;
+}
+
+
+

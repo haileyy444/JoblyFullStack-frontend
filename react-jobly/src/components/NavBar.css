@@ -1,0 +1,143 @@
+/* Main Navbar */
+.NavBar {
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 
+              0 3px 1px -2px rgba(0, 0, 0, 0.12), 
+              0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;  /* Fix the navbar at the top */
+  top: 0;           /* Stick to the top */
+  left: 0;
+  z-index: 1000;    /* Ensure it stays above other elements */
+}
+
+/* Ensure body has padding to prevent content from being hidden under the fixed navbar */
+body {
+  padding-top: 60px; /* Adjust based on navbar height */
+}
+
+/* Jobly Logo */
+.Jobly {
+  color: #1A43BF;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Navigation Container */
+.Components {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Individual Nav Items */
+.nav-item {
+  display: inline-block;
+  margin-left: 20px;
+  color: #1A43BF;
+  font-size: larger;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Active Link */
+.nav-item:hover {
+  font-weight: bold;
+  background-color: gainsboro;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 30px;
+  color: #1A43BF;
+  cursor: pointer;
+}
+
+/* Mobile Menu - Initially Hidden */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0.05em 0 #1A43BF,
+              0 0.05em #1A43BF,
+              -0.05em 0 #1A43BF,
+              0 -0.05em #1A43BF,
+              -0.05em -0.05em #1A43BF,
+              -0.05em 0.05em #1A43BF,
+              0.05em -0.05em #1A43BF,
+              0.05em 0.05em #1A43BF;
+  border-bottom-width: 5px;
+}
+
+.mobile-menu .nav-item {
+  padding: 10px;
+}
+
+/* Show menu when active */
+.mobile-menu.active {
+  display: flex;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .Components {
+    display: none; /* Hide normal nav */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+}
+
+/* Username Dropdown */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  padding: 8px 16px;
+  color: #1A43BF;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position directly below username */
+  left: 0;
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  flex-direction: column;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-item {
+  padding: 10px;
+  text-decoration: none;
+  color: #1A43BF;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background-color: gainsboro;
+}

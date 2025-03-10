@@ -1,0 +1,67 @@
+.home {
+    text-align: center;
+    
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.home h1{
+    align-items: center;
+
+    margin-top: 20%;
+    font-size: 2rem;
+    padding-top: 5%;
+    
+}
+
+
+
+
+
+.home .loggedOut-options button {
+    margin: 4%;
+    margin-bottom: 3%;
+    padding: 2%;
+    font-size: larger;
+    font-weight: bold;
+    color: #1A43BF ;
+    border-color: #1A43BF ;
+    border-width: 5px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.home .loggedIn-options button {
+    background-color:#1A43BF ;
+    color: white;
+    border-color: gainsboro;
+    border-width: 5px;
+    margin: 6%;
+    margin-bottom: 3%;
+    padding: 2%;
+    min-width: 150px;
+    font-size: larger;
+    font-weight: bold;
+    width: 20%;
+    font-size: 1rem;
+    margin-top: 2%;
+    
+}
+
+.loggedIn-options {
+    margin-top: 14%;
+    color: #1A43BF;
+    text-shadow: .05em 0 white,
+    0 0.05em white,
+    -0.05em 0 white,
+    0 -0.05em white,
+    -0.05em -0.05em white,
+    -0.05em 0.05em white,
+    0.05em -0.05em white,
+    0.05em 0.05em white
+    
+}
+
+
