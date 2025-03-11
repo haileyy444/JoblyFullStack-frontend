@@ -1,5 +1,5 @@
 import React, {createContext, useContext, useEffect, useState} from "react";
-import {Routes, Route, RouterProvider, useNavigate} from "react-router-dom";
+import {Routes, Route, RouterProvider, useNavigate, Link} from "react-router-dom";
 import CompaniesList from "./components/CompaniesList";
 import JobsList from "./components/JobsList";
 import './App.css';
@@ -166,8 +166,18 @@ function App() {
 
            )} 
             <Route exact path="/" element={<Home currentUser={currentUser}/>} />
-            <Route path="*" element={<p style={{ color: "white", textAlign:"center", marginTop: "10%"}}>Hmmm. I can't seem to find the page that you want.</p>} />
-      
+            <Route
+                  path="*"
+                  element={
+                    <div className="notFoundContainer">
+                      <h1>404</h1>
+                      <p>Hmmm. I can't seem to find the page that you want.</p>
+                      <Link to="/" className="homeLink">Go Back Home</Link>
+                    </div>
+                  }
+                />
+                
+
           </Routes>
        </main>
 
