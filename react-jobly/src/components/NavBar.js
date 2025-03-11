@@ -32,8 +32,8 @@ function NavBar({currentUser, logout}) {
           {!currentUser ? (
             <>
               
-                <a href="/login" className="nav-item">Login</a>
-                <a href="/signup" className="nav-item">Signup</a>
+                <a href="https://joblyfullstack-frontend.onrender.com/login" className="nav-item">Login</a>
+                <a href="/signup" className="nav-item" >Signup</a>
             </>
         
           ) : (
