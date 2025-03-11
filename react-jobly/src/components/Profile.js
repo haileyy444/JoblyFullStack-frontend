@@ -79,11 +79,14 @@ console.log("profile.js currentuser: ", currentUser);
     return <p>Loading...</p>
   }
 
-  if(!profile) {
+  if (!profile) {
     return (
-        <h2>Please <Link to={"/login"}>Login</Link> or <Link to={"/signup"}>Signup</Link> to view your Profile</h2>
+      <div className="needUserErrorContainer">
+        <h2>Please <Link to="/login">Login</Link> or <Link to="/signup">Signup</Link> to view your Profile</h2>
+      </div>
     );
   }
+  
   return (
     <section className="profile">
      
