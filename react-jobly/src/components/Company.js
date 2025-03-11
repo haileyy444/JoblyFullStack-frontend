@@ -73,7 +73,10 @@ function Company({ items, cantFind, currentUser }) {
 
   if (isLoadingCompany){
 
-    return <h1>Loading...</h1>
+    return ( <div className="loading-container">
+    <div className="loading-spinner"></div>
+  </div>
+    );
   }
   
   return (

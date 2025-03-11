@@ -18,7 +18,14 @@ const CompaniesList = ({type = "companies"}) => {
     );
 
 
-    if (isLoading) {return <p>Loading...</p>}
+    if (isLoading) {
+        return (
+          <div className="loading-container">
+            <div className="loading-spinner"></div>
+          </div>
+        );
+      }
+      
 
     return (
         <div className='CompaniesList'>

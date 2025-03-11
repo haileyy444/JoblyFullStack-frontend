@@ -45,3 +45,36 @@ p{
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+
+
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    width: 100vw; /* Full screen width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Light overlay */
+    z-index: 9999; /* Ensure it stays above other elements */
+  }
+  
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ddd; /* Light gray border */
+    border-top: 5px solid #007bff; /* Blue color */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

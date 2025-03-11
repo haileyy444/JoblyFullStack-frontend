@@ -128,8 +128,13 @@ function App() {
     navigate('/');
   }
   if (isLoading) {
-    return <p>Loading &hellip;</p>;
+    return (
+      <div className="loading-container">
+        <div className="loading-spinner"></div>
+      </div>
+    );
   }
+  
   return (
     <UserContext.Provider value={{currentUser, handleLogout}}>
 

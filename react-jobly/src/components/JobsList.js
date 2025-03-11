@@ -9,7 +9,13 @@ const JobsList = ({type = "jobs", list = [], companyHandle, currentUser}) => {
     const [items, isLoading] = useList(type);
 
     const displayJobs = list.length > 0 ? list: items;
-    if (isLoading && list.length === 0) {return <p>Loading...</p>}
+    if (isLoading && list.length === 0) {
+        return (
+            <div className="loading-container">
+              <div className="loading-spinner"></div>
+            </div>
+          );
+    }
 
     return (
         <div className='JobsList'>
